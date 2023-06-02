@@ -10,8 +10,7 @@ def study_schedule(permanence_period, target_time):
         if type(entrada) != int or type(saida) != int:
             return None
 
-        for tempo in range(entrada, saida + 1):
-            if tempo == target_time:
-                estudantes_presentes += 1
+        if entrada <= target_time <= saida:
+            estudantes_presentes += 1
 
     return estudantes_presentes
