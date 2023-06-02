@@ -15,4 +15,3 @@ def study_schedule(permanence_period, target_time):
                 estudantes_presentes += 1
 
     return estudantes_presentes
-
