@@ -1,3 +1,25 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    """Faça o código aqui."""
-    raise NotImplementedError
+    # Verificar se a palavra é vazia
+    if word == "":
+        return False
+
+    # Condição de parada: índices se encontram ou se cruzaram
+    if low_index >= high_index:
+        return True
+
+    # Verificar se os caracteres nos índices baixo e alto são diferentes
+    if word[low_index] != word[high_index]:
+        return False
+
+    # Chamada recursiva com os índices atualizados
+    return is_palindrome_recursive(word, low_index + 1, high_index - 1)
+
+
+#Uma forma de resolver se pensar na recursividade:
+# def is_palindrome(word):
+#     if not word:
+#         return False
+
+#     reversed_word = word[::-1]  # Inverter a palavra usando a sintaxe de fatiamento
+
+#     return word == reversed_word
