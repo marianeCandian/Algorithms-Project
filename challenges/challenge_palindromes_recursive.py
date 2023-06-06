@@ -15,11 +15,11 @@ def is_palindrome_recursive(word, low_index, high_index):
     return is_palindrome_recursive(word, low_index + 1, high_index - 1)
 
 
-#Uma forma de resolver se pensar na recursividade:
+# Uma forma de resolver se pensar na recursividade:
 # def is_palindrome(word):
 #     if not word:
 #         return False
-
-#     reversed_word = word[::-1]  # Inverter a palavra usando a sintaxe de fatiamento
+#    Inverter a palavra usando a sintaxe de fatiamento
+#     reversed_word = word[::-1]
 
 #     return word == reversed_word
