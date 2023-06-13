@@ -9,6 +9,5 @@ def find_duplicate(nums):
         if num in unique_nums:
             return num
         unique_nums.add(num)
-    
-    return False
 
+    return False
